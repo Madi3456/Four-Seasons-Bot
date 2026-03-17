@@ -46,7 +46,7 @@ def getHoliday(date=None):
 
 
 
-daytest=dt.date(2025,9,20)
+daytest=dt.date.today()
 if getHoliday(daytest):
     today = getHoliday(daytest)
     if "new years"==today:
