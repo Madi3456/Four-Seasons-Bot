@@ -238,7 +238,7 @@ if prompt := st.chat_input("Say something"):
     print(groq_api_key.strip().startswith("gsk_"))
     if not groq_api_key.strip().startswith("gsk_"):
         print(groq_api_key)
-        st.warning("Please enter your OpenAI API key!", icon="⚠")
+        st.warning("Please enter your Groq API key!", icon="⚠")
     if groq_api_key.startswith("gsk_"):
         with st.chat_message("user",avatar=userAvatar):
             st.write(prompt)
